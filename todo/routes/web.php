@@ -7,6 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tasks', function() {
-    return view('index');
-});
+Route::get( uri: '/tasks', action: [taskController:: class, 'index']);

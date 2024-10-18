@@ -8,10 +8,9 @@ class TaskController extends Controller
 {
     public function index()
     {
-        //Buscar todas as tasks
         $tasks = Task::all();
 
-        // Retorna uma view com a lista de tarefas
-        return view('tasks.index', compact('tasks'));
+
+        return view('index', compact('tasks'));
     }
 }
